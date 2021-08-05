@@ -1,10 +1,19 @@
 import "./App.css";
-import perspectiveGrid from "./images/perspectiveGrid.png";
+import star from "./images/star.png";
 
 function App() {
   return (
     <div className="App">
-      <img id="perspective-grid" src={perspectiveGrid} />
+      <header>
+        <img className="stars" src={star} />
+        <div className="sun">
+          <h1 id="title">
+            <span id="first-name">Jordan</span>
+            <span id="last-name">Renaud</span>
+            <span id="emphasis-text">Developer</span>
+          </h1>
+        </div>
+      </header>
     </div>
   );
 }

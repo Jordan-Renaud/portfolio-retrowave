@@ -1,11 +1,75 @@
-.App {
-  margin: 0;
-  width: 100%;
-  height: 200vh;
-  background: linear-gradient(180deg, #120458 0%, #fe75fe 29.98%);
+@font-face {
+  font-family: "Streamster";
+  src: url("./fonts/Streamster.woff2") format("woff2"),
+    url("./fonts/Streamster.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-.App #perspective-grid {
-  width: 100%;
-  height: 200vh;
+@font-face {
+  font-family: "SF Alien Encounters Solid";
+  src: url("./fonts/SFAlienEncountersSolid.woff2") format("woff2"),
+    url("./fonts/SFAlienEncountersSolid.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.App {
+  margin: 0;
+  padding-top: 22vh;
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url(./images/perspectiveGrid.png);
+  background-size: cover;
+}
+
+.App .stars {
+  position: absolute;
+  top: -22vh;
+}
+
+.App .sun {
+  background-image: url(./images/sun.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 33vw;
+  height: 33vw;
+  margin: 0 auto;
+}
+
+.App #title {
+  margin: 0;
+  padding-top: 18vh;
+}
+
+.App #first-name {
+  text-align: center;
+  display: block;
+  color: white;
+  font-family: "SF Alien Encounters Solid";
+  font-size: 4rem;
+  padding: 0.4rem;
+}
+
+.App #last-name {
+  text-align: center;
+  display: block;
+  color: white;
+  font-family: "SF Alien Encounters Solid";
+  font-size: 3.5rem;
+}
+
+.App #emphasis-text {
+  position: relative;
+  font-weight: normal;
+  top: -2vw;
+  left: 3vw;
+  display: block;
+  text-align: center;
+  color: white;
+  font-size: 5rem;
+  font-family: "Streamster";
+  transform: rotate(-25deg);
 }
